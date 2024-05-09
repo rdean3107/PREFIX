@@ -10,7 +10,7 @@ const {
   voiceConnection,
 } = require('@discordjs/voice');
 const ytdl = require('ytdl-core');
-ytdl.YTDL_NO_UPDATE = false;
+ytdl.YTDL_NO_UPDATE = true;
 const YouTubeSearch = require('youtube-search');
 const { EmbedBuilder } = require('discord.js');
 const { updateHistory } = require('./historyUtils');
@@ -19,7 +19,7 @@ const youtubeAPIKey = config.youtubeAPIKey;
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { InteractionCollector } = require('discord.js');
 
-let isPaused = false;
+let isPaused = true;
 const youtubeSearchOptions = {
   maxResults: 1,
   key: youtubeAPIKey,
