@@ -19,7 +19,7 @@ const youtubeAPIKey = config.youtubeAPIKey;
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { InteractionCollector } = require('discord.js');
 
-let isPaused = true;
+let isPaused = false;
 const youtubeSearchOptions = {
   maxResults: 1,
   key: youtubeAPIKey,
